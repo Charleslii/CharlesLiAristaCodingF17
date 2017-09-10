@@ -1,5 +1,8 @@
 # Arista Coding Question Fall 2017
 
+#Language Used
+Python
+
 ## The Question
 Given a binary tree, sum all of the numbers created by the paths from the root to each leaf.
 
@@ -28,21 +31,7 @@ Where applicable, return -1 if sumPaths is called on a null tree.
 
 Please implement your solution in C11, Java 8, or Python 2.7 using only the standard library of these languages. There is skeleton code with a simple test case for each of these languages in this repository.
 
-## Getting started
-To get started, **clone** (not fork) this repository. At the top of the README, state which language your solution will be in.
+## Solution
 
-We're expecting the question to take 30 minutes to an hour. We don't want you to waste a bunch of time finding a perfect solution to this, so if you're finding that it's taking much longer than that, please feel welcome to submit a non-complete solution. If you do so, please do include pseudocode and comments explaining your thoughts and ideas, and expected test cases/edge cases.
-
-## Submission
-When you are finished with your solution, edit this README, push it to a private Github repository. As a student, you are eligible for the [Github Student Developer Pack](https://education.github.com/pack), which includes unlimited private repositories.
-
-Once you've pushed to your private repository, add [alexaliu](https://github.com/alexaliu) and [jasonewang](https://github.com/jasonewang) as collaborators. **Include your Github username in the email with your resume and transcript.**
-
-You may delete your solution repository once the interview process is over.
-
-If you are unable to create a Github account or are unable to create any more private repositories you may also email your solutions along with your resume and transcript, though we strongly prefer the above repository based workflow.
-
-## Deadline
-The deadline for submission is **Wednesday, September 13th 11:59PM PDT**. If we decide to move forward with your application, we will schedule on campus interviews on Monday, September 18th or phone interviews over the next few weeks.
-
-Please email us a copy of your resume and transcript once you have completed your solution.
+The main idea of this solution is to do a preorder traversal of the tree, keeping track of the value and updating it as we go along each branch of the tree.
+We use a helper function to keep track of the value of the function as it recurses, and recurse on the left and right of the tree with our helper function. 
