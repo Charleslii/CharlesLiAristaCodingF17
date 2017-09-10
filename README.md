@@ -1,7 +1,6 @@
 # Arista Coding Question Fall 2017
 
-##Language Used
-Python
+Language Used: Python
 
 ## The Question
 Given a binary tree, sum all of the numbers created by the paths from the root to each leaf.
